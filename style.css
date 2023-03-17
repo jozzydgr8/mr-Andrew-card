@@ -1,0 +1,313 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+body{
+    background: rgb(161, 161, 216);
+}
+/* *******img******* */
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+/* ******class****** */
+.about{
+    border: solid black 5px;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    /* margin-top: 25vh; */
+    color: rgb(86, 76, 76);
+
+}
+
+.authorname{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.browselink{
+    color: gray;
+    font-size: x-small;
+}
+.browselink:hover{
+    text-decoration: underline;
+}
+.companyname{
+    font-size: smaller;
+    font-weight: lighter;
+
+}
+.container{
+    height: 50px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: rgb(187, 179, 179);
+}
+.front{
+    display: flex;
+    flex-direction: column;
+  background: rgb(246, 238, 195);
+    /* display: none; */
+
+}
+.inner{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: black;
+}
+.section{
+    /* border: solid black 1px; */
+    height: 350px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 25vh;
+}
+.front:hover{
+    transition: 2s;
+}
+.attributes:hover{
+    transition: 2s;
+}
+.section:hover .front{
+    display: none;
+    cursor: pointer;  
+}
+.section:hover .attributes{
+    display: contents;
+    cursor: pointer;
+}
+/* **********back********* */
+.attributes{
+    height: 350px;
+    width: 400px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display: none;
+    /* margin-top: 25vh; */
+    /* position: relative; */
+    /* bottom: 350px; */
+    /* margin-left: 305px; */
+
+
+
+}
+
+
+.firstpart{
+    height: 350px;
+    width: 200px;
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+    justify-content: center;
+    background: rgb(246, 238, 195);
+    
+}
+.reachoutpart{
+    height: 350px;
+    width: 200px;
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    gap: 10px;
+    justify-content: center;
+
+}
+/* ********backextra******* */
+.mag{
+    height: 75px;
+    width: 75px;
+}
+.ejuandytext{
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.corp{
+    font-size: medium;
+    font-weight: lighter;
+}
+.webaddress{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: solid 1px gray;
+    width: 100%;
+
+    
+
+}
+.webaddressicon{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.webaddresses{
+    color: rgb(47, 43, 43);
+}
+/* *****icons******* */
+.telephone{
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.teltext{
+    color: gray;
+}
+.teltext:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.location{
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.tel{
+    display: flex;
+    flex-direction: row;
+}
+.lastdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content:center ;
+    margin-top: 50px;
+    /* border: solid 1px white; */
+    /* background: gray; */
+    width: 100%;
+    
+}
+.lastname{
+    color: gray;
+    text-transform: uppercase;
+
+    
+
+}
+.characteristics{
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-transform: capitalize;
+    font-size: small;
+}
+@media (max-width: 600px) {
+    .section, .front, .about, .container{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+    .section{
+        margin-top: 150px;
+    }
+
+    .container, .inner{
+        display: none;
+    }
+    .authorname{
+        font-size: medium;
+    }
+    .companyname{
+        font-size: small;
+    }
+    .ejuandytext{
+        font-size: 15px;
+    }
+    .attributes{
+        width: 300px;
+    }
+    .firstpart, .reachoutpart{
+        width: 150px;
+    }
+    .tel, .teltext, .location, .lastname{
+        font-size: 14px;
+    }
+    .characteristics{
+        font-size: 9px;
+    }
+    .webaddressicon{
+        font-size: 25px;
+        margin-top: 5px;}
+
+}
+@media (max-width:300px) {
+    .section, .front, .about, .container{
+        width: 250px;
+    }
+    .firstpart{
+        display: flex;
+        gap: 3px;
+    }
+    .firstpart, .reachoutpart{
+        width: 125px;
+    }
+    .ejuandytext{
+        font-size: 10px;
+    }
+    .attributes{
+        width: 250px;
+    }
+    .tel, .teltext, .location, .lastname{
+        font-size: 9px;
+    }
+    .characteristics{
+        font-size: 7px;
+    }
+    .corp{
+        font-size: 8px;
+    }
+    .webaddresses{
+        font-size: 8px;
+        text-decoration: underline;
+    }
+    .webaddress{
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+    .webaddressicon{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .locationicon{
+        font-size: 20px;
+    }
+    
+}
